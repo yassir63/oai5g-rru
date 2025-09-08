@@ -330,12 +330,12 @@ CN_DEFAULT_GW=""
 ################################ oai-gnb chart parameters ########################
 OAI5G_RAN="$OAI5G_CHARTS/oai-5g-ran"
 #R2LAB_REPO="docker.io/r2labuser"
-R2LAB_REPO="ghcr.io/ziyad-mabrouk/openairinterface5g"
-MY_REPO="ghcr.io/ziyad-mabrouk/openairinterface5g"
+R2LAB_REPO="oaisoftwarealliance"
+MY_REPO="oaisoftwarealliance"
 #
 
 #RAN_TAG="2025.w34"
-RAN_TAG="test"
+RAN_TAG="develop"
 GNB_NAME="gNB-r2lab"
 
 # DU/CU SPLIT parameters
@@ -868,7 +868,7 @@ function configure-gnb() {
     if [[ $GNB_MODE = 'monolithic' ]]; then
 	CONF_ORIG=$DIR_CONF/$(eval echo \"\${CONF_$RRU}\")
 	DIR_TEMPLATES="$PREFIX_DEMO/oai-cn5g-fed/charts/oai-5g-ran/oai-gnb/templates"
-	NB_LINES=7
+	NB_LINES=8
 	echo "monolithic gNB, conf is $CONF_ORIG"
     else
 	CONF_ORIG=$DIR_CONF/$(eval echo \"\${CONF_DU_$RRU}\")
