@@ -330,12 +330,12 @@ CN_DEFAULT_GW=""
 ################################ oai-gnb chart parameters ########################
 OAI5G_RAN="$OAI5G_CHARTS/oai-5g-ran"
 #R2LAB_REPO="docker.io/r2labuser"
-R2LAB_REPO="ghcr.io/ziyad-mabrouk/openairinterface5g"
-MY_REPO="ghcr.io/ziyad-mabrouk/openairinterface5g"
+R2LAB_REPO="docker.io/oaisoftwarealliance"
+MY_REPO="docker.io/oaisoftwarealliance"
 #
 
 #RAN_TAG="2025.w34"
-RAN_TAG="test"
+RAN_TAG="develop"
 GNB_NAME="gNB-r2lab"
 
 # DU/CU SPLIT parameters
