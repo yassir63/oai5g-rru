@@ -549,7 +549,7 @@ ADDR_panther="192.168.236.103"
 
 
 ########################### oai-nr-ue rfsim chart parameters #####################
-NRUE_REPO="${MY_REPO}/oai-nr-ue"
+NRUE_REPO="${R2LAB_REPO}/oai-nr-ue"
 #NRUE_REPO="${OAISA_REPO}/oai-nr-ue"
 NRUE_TAG="${RAN_TAG}"
 OPTIONS_NRUE="--rfsim -C 3619200000 -r 106 --numerology 1 --ssb 516 -E  --log_config.global_log_options level,nocolor,time" 
