@@ -329,7 +329,7 @@ CN_DEFAULT_GW=""
 
 ################################ oai-gnb chart parameters ########################
 OAI5G_RAN="$OAI5G_CHARTS/oai-5g-ran"
-R2LAB_REPO="docker.io/r2labuser"
+MY_REPO="docker.io/r2labuser"
 #R2LAB_REPO="docker.io/oaisoftwarealliance"
 MY_REPO="ghcr.io/ziyad-mabrouk/openairinterface5g"
 #
@@ -394,7 +394,7 @@ QOS_CU_DEF="true"
 # NODE_CU is defined above and also the same for CUCP/CUUP
 #
 ########## CU-CP specific part ##############
-CUCP_REPO="${R2LAB_REPO}/oai-gnb" 
+CUCP_REPO="${MY_REPO}/oai-gnb" 
 CUCP_TAG=${RAN_TAG}
 NAME_CUCP_SA="oai-cu-cp-sa"
 #
@@ -426,7 +426,7 @@ QOS_CUCP_DEF="true"
 NODE_CUCP="$NODE_CU"
 #
 ########## CU-UP specific part ##############
-CUUP_REPO="$R2LAB_REPO/oai-nr-cuup"
+CUUP_REPO="$MY_REPO/oai-nr-cuup"
 CUUP_TAG=${RAN_TAG}
 NAME_CUUP_SA="oai-cu-up-sa"
 #
@@ -477,7 +477,7 @@ NETMASK_GNB_RU="24"
 RU_MODE="static" # in ['static', 'dhcp']
 #
 #### rfsim RU case ####
-GNB_REPO_rfsim="${R2LAB_REPO}/oai-gnb"
+GNB_REPO_rfsim="${MY_REPO}/oai-gnb"
 #GNB_REPO_rfsim="${MY_REPO}/oai-gnb"
 GNB_TAG_rfsim="${RAN_TAG}"
 CONF_rfsim="gnb.sa.band78.106prb.rfsim.conf" 
@@ -486,7 +486,7 @@ OPTIONS_rfsim="-E --rfsim --log_config.global_log_options level,nocolor,time"
 #OPTIONS_rfsim="--sa -E --rfsim --log_config.global_log_options level,nocolor,time"
 #
 #### b2xx RU case ####
-GNB_REPO_b2xx="${R2LAB_REPO}/oai-gnb"
+GNB_REPO_b2xx="${MY_REPO}/oai-gnb"
 #GNB_REPO_b2xx="${MY_REPO}/oai-gnb"
 GNB_TAG_b2xx="${RAN_TAG}"
 CONF_b210="gnb.sa.band78.fr1.106PRB.usrpb210.conf"
@@ -495,7 +495,7 @@ CONF_b210="gnb.sa.band78.fr1.106PRB.usrpb210.conf"
 OPTIONS_b2xx="-E --tune-offset 30000000 --log_config.global_log_options level,nocolor,time"
 
 #### n3xx RU case ####
-GNB_REPO_n3xx="${R2LAB_REPO}/oai-gnb"
+GNB_REPO_n3xx="${MY_REPO}/oai-gnb"
 #GNB_REPO_n3xx="${MY_REPO}/oai-gnb"
 GNB_TAG_n3xx="${RAN_TAG}"
 #
@@ -525,7 +525,7 @@ ADDRS_n300="addr=192.168.235.103,second_addr=192.168.235.104"
 ADDRS_n320="addr=192.168.235.105"
 
 #### aw2s RU case ####
-GNB_REPO_aw2s="${R2LAB_REPO}/oai-gnb-aw2s"
+GNB_REPO_aw2s="${MY_REPO}/oai-gnb-aw2s"
 #GNB_REPO_aw2s="${MY_REPO}/oai-gnb-aw2s"
 GNB_TAG_aw2s="${RAN_TAG}"
 #
@@ -549,7 +549,7 @@ ADDR_panther="192.168.236.103"
 
 
 ########################### oai-nr-ue rfsim chart parameters #####################
-NRUE_REPO="${R2LAB_REPO}/oai-nr-ue"
+NRUE_REPO="${MY_REPO}/oai-nr-ue"
 #NRUE_REPO="${OAISA_REPO}/oai-nr-ue"
 NRUE_TAG="${RAN_TAG}"
 OPTIONS_NRUE="--rfsim -C 3619200000 -r 106 --numerology 1 --ssb 516 -E  --log_config.global_log_options level,nocolor,time" 
