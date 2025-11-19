@@ -335,7 +335,7 @@ MY_REPO="ghcr.io/ziyad-mabrouk/openairinterface5g"
 #
 
 #RAN_TAG="2025.w34"
-RAN_TAG="latest"
+RAN_TAG="test"
 GNB_NAME="gNB-r2lab"
 
 # DU/CU SPLIT parameters
