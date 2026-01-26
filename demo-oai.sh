@@ -336,6 +336,7 @@ MY_REPO="ghcr.io/ziyad-mabrouk/openairinterface5g"
 
 #RAN_TAG="2025.w34"
 RAN_TAG="test"
+RFSIM_UE_TAG="develop"
 GNB_NAME="gNB-r2lab"
 
 # DU/CU SPLIT parameters
@@ -551,7 +552,7 @@ ADDR_panther="192.168.236.103"
 ########################### oai-nr-ue rfsim chart parameters #####################
 NRUE_REPO="${R2LAB_REPO}/oai-nr-ue"
 #NRUE_REPO="${OAISA_REPO}/oai-nr-ue"
-NRUE_TAG="${RAN_TAG}"
+NRUE_TAG="${RFSIM_UE_TAG}"
 OPTIONS_NRUE="--rfsim -C 3619200000 -r 106 --numerology 1 --ssb 516 -E  --log_config.global_log_options level,nocolor,time" 
 #OPTIONS_NRUE="--sa --rfsim -C 3619200000 -r 106 --numerology 1 --ssb 516 -E  --log_config.global_log_options level,nocolor,time" 
 NETMASK_NRUE="$NETMASK_N2N3"
